@@ -75,7 +75,11 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
             <li key={label}>
               <a
                 href={href}
-                className="block px-4 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                className="block px-4 py-2 rounded-md 
+            hover:bg-gray-100 dark:hover:bg-gray-800 
+            focus:bg-gray-100 dark:focus:bg-gray-800 
+            active:bg-gray-200 dark:active:bg-gray-700 
+            transition-colors duration-200"
               >
                 {label}
               </a>
