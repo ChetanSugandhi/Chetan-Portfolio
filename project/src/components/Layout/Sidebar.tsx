@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
       <nav className="block sm:hidden mb-8 px-2">
         <ul className="flex flex-col gap-3 text-base text-gray-800 dark:text-gray-200 font-semibold">
           {[
-            { label: 'Home', href: '/home' },
+            { label: 'Home', href: '/' },
             { label: 'About', href: '/about' },
             { label: 'Projects', href: '/projects' },
             { label: 'Contact', href: '/contact' },
