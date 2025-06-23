@@ -202,6 +202,11 @@ const About: React.FC = () => {
               image: 'https://mite.ac.in/wp-content/uploads/2020/01/nptel-mite.jpg',
               link: 'https://drive.google.com/file/d/1RfiXJcRcTX6ShnFDD0Zi3vuWDlnVo83G/view?usp=sharing'
             },
+            {
+              title: 'MERN Stack – Edunet Foundation, TeckSaksham (A joint CSR initiative between Microsoft and SAP)',
+              image: 'https://techsaksham.org/images/tsp-partners2.png',
+              link: 'https://drive.google.com/file/d/1ghPYJvlykRNaXoPiFb5HB1a2yCG-J_OJ/view?usp=sharing'
+            },
             // Add other certificates similarly
           ].map((cert, idx) => {
             const formattedDate = cert.date
