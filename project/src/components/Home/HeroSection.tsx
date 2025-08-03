@@ -16,8 +16,8 @@ const skillLevelPercent = {
 const skills = {
   frontend: [
     { name: 'React', icon: '⚛️', level: 'Advanced', levelPercent: skillLevelPercent['Advanced'] },
-    { name: 'Tailwind CSS', icon: '💨', level: 'Proficient', levelPercent: skillLevelPercent['Proficient'] },
-    { name: 'BootStrap', icon: '📘', level: 'Proficient', levelPercent: skillLevelPercent['Proficient'] },
+    { name: 'Tailwind CSS', icon: '💨', level: 'Intermediate', levelPercent: skillLevelPercent['Intermediate'] },
+    { name: 'BootStrap', icon: '📘', level: 'Intermediate', levelPercent: skillLevelPercent['Intermediate'] },
     { name: 'HTML5', icon: '📄', level: 'Expert', levelPercent: skillLevelPercent['Expert'] },
     { name: 'CSS3', icon: '🎨', level: 'Expert', levelPercent: skillLevelPercent['Expert'] },
     { name: 'Swing', icon: '🪑', level: 'Intermediate', levelPercent: skillLevelPercent['Intermediate'] },
@@ -41,7 +41,8 @@ const skills = {
     { name: 'Socket.io', icon: '🧵', level: 'Proficient', levelPercent: skillLevelPercent['Proficient'] },
   ],
   devops: [
-    { name: 'Docker', icon: '🐳', level: 'Novice', levelPercent: skillLevelPercent['Novice'] },
+    { name: 'Linux', icon: '🐧', level: 'Intermediate', levelPercent: skillLevelPercent['Intermediate'] },
+    { name: 'Vim', icon: '📝', level: 'Novice', levelPercent: skillLevelPercent['Novice'] },
   ],
   other: [
     { name: 'Git', icon: '🔧', level: 'Advanced', levelPercent: skillLevelPercent['Advanced'] },

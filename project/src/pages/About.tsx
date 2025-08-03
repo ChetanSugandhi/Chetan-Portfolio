@@ -156,56 +156,74 @@ const About: React.FC = () => {
           Certifications
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {[
             {
-              title: 'AWS Cloud Foundations',
+              title: 'AWS Academy Cloud Foundations',
               issuer: 'Amazon Web Services',
               badge: 'AWS',
               date: '2024-03-15',
-              image: 'https://gadget.co.za/wp-content/uploads/2020/12/aws-logo-scaled.jpg',
+              image: '/images/AWS_Certificate.png',
               link: 'https://drive.google.com/file/d/1FCF4dVevNMQrAqrzXS7oBf06hStjJ9Su/view?usp=sharing'
             },
             {
               title: 'Google Solution Challenge 2025',
               issuer: 'Google for Developers',
-              badge: 'Google Solution Badge',
+              badge: 'Google Solution Challenge',
               date: '2024-03-15',
-              image: 'https://gdsc-university-of-seoul.github.io/assets/images/post-mobile-gsc2022-ar/thumbnail.png',
-              link: 'https://drive.google.com/file/d/14kT6RTUGb72hBofUzSVml9uuK9v3z-3A/view?usp=sharing'
+              image: '/images/Google_Solution_Challenge.png',
+              link: 'https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I02781'
             },
+            {
+              title: "Sparkathon | Converge - Walmart Global Tech's open innovation challenge !",
+              issuer: 'Walmart',
+              badge: 'Walmart-Sparkathon',
+              date: '2024-07-29',
+              image: '/images/Walmart_Sparkathon.png',
+              link: 'https://drive.google.com/file/d/1ZoPrmGEgRudZp1X-ce-ADD66V0RzYyF6/view?usp=sharing'
+            },
+            {
+              title: 'MERN Stack – Edunet Foundation, TeckSaksham (A joint CSR initiative between Microsoft and SAP)',
+              badge: 'Edunet Foundation',
+              image: '/images/Edunet.png',
+              link: 'https://drive.google.com/file/d/1ghPYJvlykRNaXoPiFb5HB1a2yCG-J_OJ/view?usp=sharing'
+            },
+
             {
               title: 'NPTEL - Data Structures and Algorithms using Java (DSA)',
               score: '71%',
               date: '2024-11-24',
-              image: 'https://mite.ac.in/wp-content/uploads/2020/01/nptel-mite.jpg',
+              image: '/images/NPTEL_DSA.png',
               link: 'https://drive.google.com/file/d/16jT3-DIEKRKlLGFHbTr5AUYSnHVYgAfZ/view?usp=sharing'
             },
             {
               title: 'NPTEL - DataBase Management System (DBMS)',
               score: '69%',
               date: '2024-10-01',
-              image: 'https://mite.ac.in/wp-content/uploads/2020/01/nptel-mite.jpg',
+              image: '/images/NPTEL_DBMS.png',
               link: 'https://drive.google.com/file/d/1blLWmIT_5zOT-y0jkPsqDrfbGXbUyrlZ/view?usp=sharing'
             },
             {
-              title: 'NPTEL - Programming in Java',
+              title: 'Elite Certificate - Programming in Java - NPTEL',
               score: '70%',
               date: '2024-05-15',
-              image: 'https://mite.ac.in/wp-content/uploads/2020/01/nptel-mite.jpg',
+              image: '/images/NPTEL_Java.png',
               link: 'https://drive.google.com/file/d/12U1QisIupuUQgacQ46hRK6yzBrPrEt8P/view?usp=sharing'
             },
             {
               title: 'NPTEL - Computer Network and Internet Protocol (CN)',
               score: '54%',
               date: '2025-05-16',
-              image: 'https://mite.ac.in/wp-content/uploads/2020/01/nptel-mite.jpg',
+              image: '/images/NPTEL_CN.png',
               link: 'https://drive.google.com/file/d/1RfiXJcRcTX6ShnFDD0Zi3vuWDlnVo83G/view?usp=sharing'
             },
             {
-              title: 'MERN Stack – Edunet Foundation, TeckSaksham (A joint CSR initiative between Microsoft and SAP)',
-              image: 'https://techsaksham.org/images/tsp-partners2.png',
-              link: 'https://drive.google.com/file/d/1ghPYJvlykRNaXoPiFb5HB1a2yCG-J_OJ/view?usp=sharing'
+              title: 'Delta - Full Stack Web developer',
+              issuer: 'Apna College',
+              badge: 'Full Stack Web Developer',
+              date: '2024-12-20',
+              image: '/images/Delta_ApnaCollege.png',
+              link: 'https://drive.google.com/file/d/1FV9-h2UnPn9-td_a0laQUKjy-nCp1r8W/view?usp=sharing'
             },
             // Add other certificates similarly
           ].map((cert, idx) => {
@@ -220,16 +238,18 @@ const About: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="card p-6 border border-gray-300 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col"
+                className="card p-4 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition duration-300 flex flex-col min-h-[400px]"
               >
+
                 {/* Image and Link */}
                 {cert.image && cert.link && (
                   <a
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mb-4 w-4/5 h-24 mx-auto overflow-hidden rounded-md shadow-md hover:scale-105 transition-transform duration-200"
+                    className="mb-3 w-full h-48 md:h-56 mx-auto overflow-hidden rounded-md shadow-md hover:scale-105 transition-transform duration-200"
                   >
+
                     <img
                       src={cert.image}
                       alt={`${cert.title} logo`}
